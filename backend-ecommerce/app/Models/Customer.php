@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Customer extends Model
 {
     use HasFactory;
     /**
@@ -14,6 +14,25 @@ class Category extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'slug', 'image'
+        'name', 'email', 'email', 'email_verified_at', 'password',
+        'remember_token'
     ];
+    /**
+     * invoice
+     *
+     * @return void
+     */
+    public function invoices()
+    {
+        return $this->hasMany(Invoice::class);
+    }
+    /**
+     * reviews
+     *
+     * @return void
+     */
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
 }
