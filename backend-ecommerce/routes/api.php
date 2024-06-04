@@ -66,5 +66,12 @@ Route::prefix('admin')->group(function () {
             ['except' =>
             ['create', 'edit'], 'as' => 'admin']
         );
+        //invoices resource
+        Route::apiResource(
+            '/invoices',
+            App\Http\Controllers\Api\Admin\InvoiceController::class,
+            ['except' =>
+            ['create', 'store', 'edit', 'update', 'destroy'], 'as' => 'admin']
+        );
     });
 });
