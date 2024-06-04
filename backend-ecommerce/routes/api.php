@@ -81,5 +81,12 @@ Route::prefix('admin')->group(function () {
                 ['as' => 'admin']
             ]
         );
+        //sliders resource
+        Route::apiResource(
+            '/sliders',
+            App\Http\Controllers\Api\Admin\SliderController::class,
+            ['except' =>
+            ['create', 'show', 'edit', 'update'], 'as' => 'admin']
+        );
     });
 });
