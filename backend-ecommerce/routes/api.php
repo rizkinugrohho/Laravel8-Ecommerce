@@ -73,5 +73,13 @@ Route::prefix('admin')->group(function () {
             ['except' =>
             ['create', 'store', 'edit', 'update', 'destroy'], 'as' => 'admin']
         );
+        //customer
+        Route::get(
+            '/customers',
+            [
+                App\Http\Controllers\Api\Admin\CustomerController::class, 'index',
+                ['as' => 'admin']
+            ]
+        );
     });
 });
