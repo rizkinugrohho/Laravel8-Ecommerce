@@ -88,5 +88,12 @@ Route::prefix('admin')->group(function () {
             ['except' =>
             ['create', 'show', 'edit', 'update'], 'as' => 'admin']
         );
+        //users resource
+        Route::apiResource(
+            '/users',
+            App\Http\Controllers\Api\Admin\UserController::class,
+            ['except' =>
+            ['create', 'edit'], 'as' => 'admin']
+        );
     });
 });
