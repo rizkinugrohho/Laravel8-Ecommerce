@@ -52,5 +52,12 @@ Route::prefix('admin')->group(function () {
                 ['as' => 'admin']
             ]
         );
+        //categories resource
+        Route::apiResource(
+            '/categories',
+            App\Http\Controllers\Api\Admin\CategoryController::class,
+            ['except' =>
+            ['create', 'edit'], 'as' => 'admin']
+        );
     });
 });
