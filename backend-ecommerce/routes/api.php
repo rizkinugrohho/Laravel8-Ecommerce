@@ -156,3 +156,14 @@ Route::prefix('customer')->group(function () {
         );
     });
 });
+
+//group route with prefix "web"
+Route::prefix('web')->group(function () {
+    //categories resource
+    Route::apiResource(
+        '/categories',
+        App\Http\Controllers\Api\Web\CategoryController::class,
+        ['except' =>
+        ['create', 'store', 'edit', 'update', 'destroy'], 'as' => 'web']
+    );
+});
