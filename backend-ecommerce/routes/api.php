@@ -97,3 +97,13 @@ Route::prefix('admin')->group(function () {
         );
     });
 });
+
+//group route with prefix "customer"
+Route::prefix('customer')->group(function () {
+    //route register
+    Route::post(
+        '/register',
+        [App\Http\Controllers\Api\Customer\RegisterController::class, 'store'],
+        ['as' => 'customer']
+    );
+});
