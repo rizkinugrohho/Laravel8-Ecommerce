@@ -241,4 +241,13 @@ Route::prefix('web')->group(function () {
         ['as'
         => 'web']
     );
+    //notification handler route
+    Route::post(
+        '/notification',
+        [
+            App\Http\Controllers\Api\Web\NotificationHandlerController::class,
+            'index'
+        ],
+        ['as' => 'web']
+    );
 });
