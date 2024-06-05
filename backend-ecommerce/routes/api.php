@@ -173,4 +173,11 @@ Route::prefix('web')->group(function () {
         ['except' =>
         ['create', 'store', 'edit', 'update', 'destroy'], 'as' => 'web']
     );
+    //sliders route
+    Route::get(
+        '/sliders',
+        [App\Http\Controllers\Api\Web\SliderController::class, 'index'],
+        ['as'
+        => 'web']
+    );
 });
