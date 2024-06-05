@@ -234,4 +234,11 @@ Route::prefix('web')->group(function () {
         [App\Http\Controllers\Api\Web\CartController::class, 'removeCart'],
         ['as' => 'web']
     );
+    //checkout route
+    Route::post(
+        '/checkout',
+        [App\Http\Controllers\Api\Web\CheckoutController::class, 'store'],
+        ['as'
+        => 'web']
+    );
 });
