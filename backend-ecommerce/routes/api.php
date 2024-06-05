@@ -148,5 +148,11 @@ Route::prefix('customer')->group(function () {
             ['except' =>
             ['create', 'store', 'edit', 'update', 'destroy'], 'as' => 'customer']
         );
+        //review
+        Route::post(
+            '/reviews',
+            [App\Http\Controllers\Api\Customer\ReviewController::class, 'store'],
+            ['as' => 'customer']
+        );
     });
 });
