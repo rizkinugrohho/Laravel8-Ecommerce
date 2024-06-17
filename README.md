@@ -1,7 +1,7 @@
 # DEMO
-## [CLICK HERE](https://www.youtube.com/watch?v=N2I7d__Z1DM) target="_blank"
+## [CLICK HERE](https://www.youtube.com/watch?v=N2I7d__Z1DM){:target="_blank"}
 
-[![WATCH](https://img.youtube.com/vi/N2I7d__Z1DM/0.jpg)](https://www.youtube.com/watch?v=N2I7d__Z1DM) target="_blank"
+[![WATCH](https://img.youtube.com/vi/N2I7d__Z1DM/0.jpg)](https://www.youtube.com/watch?v=N2I7d__Z1DM){:target="_blank"}
 
 
 
