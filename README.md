@@ -1,3 +1,6 @@
+# Front end : 
+<a href = "https://github.com/rizkinugrohho/nuxt-ecommerce" target="_blank"> Link Frontend </a>
+
 # DEMO
 ## <a href = "https://www.youtube.com/watch?v=N2I7d__Z1DM" target="_blank"> CLICK HERE </a>
 
