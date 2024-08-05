@@ -2,9 +2,9 @@
 <a href = "https://github.com/rizkinugrohho/nuxt-ecommerce" target="_blank"> Link Frontend </a>
 
 # DEMO
-## <a href = "https://www.youtube.com/watch?v=N2I7d__Z1DM" target="_blank"> CLICK HERE </a>
+## <a href = "http://kelompok3spk.vercel.app/" target="_blank"> CLICK HERE </a>
 
-[![WATCH](https://img.youtube.com/vi/N2I7d__Z1DM/0.jpg)](https://www.youtube.com/watch?v=N2I7d__Z1DM)
+[![WATCH](https://img.youtube.com/vi/N2I7d__Z1DM/0.jpg)](http://kelompok3spk.vercel.app/)
 
 ## Installation
 Make sure you have environment setup properly. You will need MySQL, PHP7.4, Node.js and composer.
